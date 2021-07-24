@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		
 		monochrome = true,
-		plugin = {"pretty", "html:target/cucumber-html"},
+		plugin = {"pretty", "html:target/cucumber-html","json:target/cucumber.json"},
 		features = "src/test/java/Features",
 		tags = {"@DataTable"},
 		//tags = {"@NegativeLogin, @PositiveLogin"},//or condition and ~ symbol to exclude a tag
