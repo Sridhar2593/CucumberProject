@@ -9,12 +9,13 @@ import io.cucumber.junit.CucumberOptions;
 		
 		monochrome = true,
 		plugin = {"pretty", "html:target/cucumber-html"},
-		features = "src/Features",
-		tags = {"@NegativeLogin, @PositiveLogin"},//or condition and ~ symbol to exclude a tag
+		features = "src/test/java/Features",
+		tags = {"@DataTable"},
+		//tags = {"@NegativeLogin, @PositiveLogin"},//or condition and ~ symbol to exclude a tag
 		// tags = {"@NegativeLogin", "@Sanity"}, this is and condition
 		glue = {"stepDefinitions"}
 		)
-public class RunnerClass {
+public class TestRunnerClass {
 	
 	
 
